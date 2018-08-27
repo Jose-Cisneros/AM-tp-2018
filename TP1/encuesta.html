@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TP1</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <header class="header flex">
+
+        <div class="logoimg">
+            <center><img class="logo" src="img/logo.png" height="100px" width="150px"> </center>
+        </div>
+        <div class="headerrest"><center><h3>Venta de Paquetes</h3></center></div>
+
+    </header>
+    <div class="content flex">
+      <aside class="aside">
+
+          <ul>
+              <li>
+                  <a href="#s1">Seccion 1</a>
+              </li>
+              <li>
+                  <a href="#s2">Seccion 2</a>
+              </li>
+              <li>
+                  <a href="#s3">Seccion 3</a>
+              </li>
+              <li>
+                  <a href="#s4">Seccion 4</a>
+              </li>
+
+          </ul>
+
+      </aside>
+      <form action="#.php">
+      Nombre:<br>
+      <input type="text" id="firstname" name="firstname" value="" pattern="[a-z][A-Z])">
+      <br>
+      Apellido:<br>
+      <input type="text"  id="lastname" name="lastname" value="">
+      <br><br>
+      Fecha de Nacimiento:<br>
+      <input type="date" id="fnac" name="fnac" value="">
+      <br><br>
+      Sexo:<br>
+      <input type="radio" name="gender" value="male" checked> Masculino<br>
+      <input type="radio" name="gender" value="female"> Femenino<br>
+      <input type="radio" name="gender" value="other"> Otro<br>
+
+      Valoracion:<br>
+      <input type="radio" name="valoracion" value="male" checked> Lamentable<br>
+    <input type="radio" name="valoracion" value="female"> Mala<br>
+    <input type="radio" name="valoracion" value="other"> Podria ser mejor<br>
+    <input type="radio" name="valoracion" value="other"> Bueno<br>
+    <input type="radio" name="valoracion" value="other"> Me encantó<br><br>
+
+
+      <input onclick="Validar()" value="Enviar">
+      <input type="submit" value="Cancelar">
+      <input onclick="borrarDatos()" id="restablecer" value="Restablecer valores">
+
+
+    </form>
+    </div>
+
+    <footer class="footer"><center>Aplicacioens Móviles 2018 - TP Nº1 - Cisneros, González Rojas,   Pardal</center></footer>
+</body>
+
+</html>
