@@ -127,6 +127,10 @@ ul.nav-list li {
     top: 1px;
 }
 
+.total{
+    color: white;
+}
+
 @media (max-width: 768px) {
   
     .logoimg {
