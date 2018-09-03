@@ -14,10 +14,7 @@ h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-
-
-h4{
-
+h4 {
     font-size: 1.5em;
 }
 
@@ -54,8 +51,6 @@ th, td {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .section {
     background-color: #3c3c77;
@@ -108,17 +103,25 @@ ul.nav-list {
     align-items: center;
 }
 
-img.foto{
-
+img.foto {
     width: 40px;
     height: 40px;
 }
 
 #encuesta {
+    text-align: center;
+    color: white;
+}
 
-    color:white;
-  }
+.content.flex.form{
 
+    justify-content: center;
+}
+
+.margin-bottom{
+
+    margin-bottom: 2em;
+}
 
 .button:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #4d4d99));
@@ -136,7 +139,7 @@ img.foto{
     top: 1px;
 }
 
-.total{
+.total {
     color: white;
     text-align: center;
     border-style: solid;
@@ -160,26 +163,20 @@ img.foto{
     h3 {
         font-size: 0.4em;
     }
-
     ul.nav-list {
-
         overflow: scroll;
     }
-
 }
+
 @media (max-width: 320px) {
     ul.nav-list {
         flex-direction: column;
         padding: 0px;
-
     }
-
     .logoimg {
         width: 98%;
     }
     .headerrest {
         width: 100%;
     }
-
-
 }
