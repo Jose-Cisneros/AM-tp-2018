@@ -1,4 +1,17 @@
 
+
+function borrarDatos_jq() {
+
+var nom = $('#firstname').val();
+var ap = $('#lastname').val();
+fnac = $('#fnac').val();
+alert(fnac);
+
+}
+
+
+
+
 function borrarDatos() {
 
 
