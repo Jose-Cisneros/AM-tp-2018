@@ -1,40 +1,39 @@
 
 
-function borrarDatos_jq() {
-
-var nom = $('#firstname').val();
-var ap = $('#lastname').val();
-fnac = $('#fnac').val();
-alert(fnac);
-
-}
-
-
 
 
 function borrarDatos() {
-
 
 document.getElementById('firstname').value = '';
 document.getElementById('lastname').value = '';
 document.getElementById('fnac').value = '';
 
+}
 
+function borrarDatos_jq() {
+
+$('#firstname').val('');
+$('#lastname').val('');
+$('#fnac').val('');
+$('#comentario').val('');
 
 
 }
-
 
 function Cancelar() {
 
   var conf = confirm("Cancelar encuesta?");
   if (conf === true) {
-        borrarDatos();
+        borrarDatos_jq();
       } else {
         Alert();
       }
 
   }
+
+
+
+
 
 
 
@@ -53,6 +52,26 @@ function Validar() {
       return true;
     }
 
+
+}
+
+function Validar_jq() {
+
+
+  var nom = $('#firstname').val();
+  var ap = $('#lastname').val();
+  var fnac = $('#fnac').val();
+  var comentario = $('#comentario').val();
+  var valoracion = $('input[name="valoracion"]:checked').val();
+  var sexo = $('input[name="gender"]:checked').val();
+
+
+  $('#encuesta input').blur(function() {
+     if(!$.trim(this.value).length) { // zero-length string AFTER a trim
+            $(this).parents('p').addClass('warning');
+     }
+});
+
 }
 
 
@@ -69,6 +88,22 @@ function Alert() {
 
 
   }
+
+function Alert_jq() {
+
+  var nom = $('#firstname').val();
+  var ap = $('#lastname').val();
+  var fnac = $('#fnac').val();
+  var comentario = $('#comentario').val();
+  var valoracion = $('input[name="valoracion"]:checked').val();
+  var sexo = $('input[name="gender"]:checked').val();
+
+  alert("Nombre: " +  nom + " - Apellido: " + ap + " - FNac: " + fnac + " - Coment:"  + comentario + " - Val: " + valoracion + " - Sexo: " + sexo );
+
+
+
+
+}
 
 
 
