@@ -10,7 +10,8 @@ function renderHtml(json) {
 
     })
 
-    document.querySelectorAll(".fotos")[0].innerHTML = html;
+    document.querySelectorAll(".hola")[0].innerHTML = html;
+    clickPrice();
 
 }
 
