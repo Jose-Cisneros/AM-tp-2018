@@ -44,8 +44,8 @@
       <a href="./encuesta.html" class="button">Realizar encuesta</a>
     </li>
   </ul>
-
-
+  <div align="center" id="encuestafail"><center>Todos los campos son obligatorios!</center></div>
+  <div align="center" id="encuestaok"><center>Gracias por completar la encuesta!</center></div>
   <div class="content flex form margin-bottom">
 
     <form id="encuesta">
@@ -74,7 +74,7 @@
   <input type="text"  id="comentario" name="comentario" value="" class="margin-bottom"><br>
 
 
-    <input type="submit" id="validar" onclick="Validar_jq()" value="Enviar">
+    <input type="button" id="validar" onclick="Validar_jq()" value="Enviar">
     <input type="button" onclick="Cancelar()" value="Cancelar">
     <input type="button" onclick="borrarDatos_jq()" id="restablecer" value="Restablecer valores">
 
@@ -94,4 +94,3 @@
 </body>
 
 </html>
- 

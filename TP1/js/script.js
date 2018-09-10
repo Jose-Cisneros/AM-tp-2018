@@ -26,7 +26,7 @@ function Cancelar() {
   if (conf === true) {
         borrarDatos_jq();
       } else {
-        Alert();
+        Alert_jq();
       }
 
   }
@@ -55,7 +55,11 @@ function Validar() {
 
 }
 
+
 function Validar_jq() {
+
+
+
 
 
   var nom = $('#firstname').val();
@@ -66,11 +70,29 @@ function Validar_jq() {
   var sexo = $('input[name="gender"]:checked').val();
 
 
-  $('#encuesta input').blur(function() {
-     if(!$.trim(this.value).length) { // zero-length string AFTER a trim
-            $(this).parents('p').addClass('warning');
-     }
-});
+      var errors = 0;
+      $("#encuesta :input").map(function(){
+           if( !$(this).val() ) {
+
+                errors++;
+          }
+      });
+      if(errors > 0){
+        $("#encuestafail").toggle(1000);
+          setTimeout(function(){
+        $("#encuestafail").toggle(1000);
+      },5000);
+      } else {
+        $("#encuestaok").toggle(1000);
+          setTimeout(function(){
+        $("#encuestaok").toggle(1000);
+        }, 5000);
+
+
+
+      }
+      // do the ajax..
+      return errors;
 
 }
 
@@ -88,9 +110,12 @@ function Alert() {
 
 
   }
+}
 
 function Alert_jq() {
 
+
+if (Validar_jq()  === 0) {
   var nom = $('#firstname').val();
   var ap = $('#lastname').val();
   var fnac = $('#fnac').val();
@@ -102,11 +127,6 @@ function Alert_jq() {
 
 
 
-
 }
-
-
-
-
 
 }
