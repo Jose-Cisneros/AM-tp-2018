@@ -32,8 +32,14 @@ buscar.addEventListener("click", () => {
     url += "&adults=" + adults;
 
     fetch(url)
-        .then((res) => {
-            console.log(res)
-        })
+    .then((res) =>{
+        return res.json();
+    })
+    
+    .then(res =>{
+
+        mapperJson(res)
+
+    })
 
 })
