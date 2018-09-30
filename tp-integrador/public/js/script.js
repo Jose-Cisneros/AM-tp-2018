@@ -22,7 +22,13 @@ let adults = document.querySelector(".pasajeros").value;
 
     fetch(url)
     .then((res) =>{
-        console.log(res)
+        return res.json();
     })
     
+    .then(res =>{
+
+        mapperJson(res)
+
+    })
+
 })
