@@ -1,0 +1,13 @@
+{
+  "name": "tp-integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

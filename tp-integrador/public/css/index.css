@@ -1,0 +1,55 @@
+.fondo {
+    background-color: #eeeeee;
+}
+.color-form{
+    margin: 10px;
+    padding: 10px;
+    
+    background-color: antiquewhite;
+}
+
+.cluster{
+    padding-top: 30px;
+}
+
+.header-cluster{
+
+    background-color: #eeeeeF;
+    padding: 10px;
+
+}
+
+.data-cluster{
+    padding: 10px;
+    background-color: rgb(96, 96, 190);
+
+}
+
+.flex{
+    display: flex;
+justify-content: space-between;
+}
+
+.recomendarData{
+    display: flex;
+}
+
+.flex-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aerolinea{
+    width: 28%;
+}
+
+.from, .to{
+    width: fit-content;
+    border: solid 1px;
+    align-items: center;
+    
+}
+
