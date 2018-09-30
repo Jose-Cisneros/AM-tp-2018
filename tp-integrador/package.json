@@ -8,6 +8,8 @@
     "watch": "jest --watchAll"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.8",
+    "request": "^2.88.0"
   }
 }
