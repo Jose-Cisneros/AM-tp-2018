@@ -1,165 +1,181 @@
 .fondo {
     background-color: #eeeeee;
 }
-.color-form{
+
+.color-form {
     margin: 10px;
     padding: 10px;
-    
     background-color: #F44336;
 }
 
-h3, h6{
-    color:white !important; 
+h3, h6 {
+    color: white !important;
 }
 
-.cluster{
+.cluster {
     padding-top: 30px;
     background-color: #eeeeeF;
     padding: 10px;
 }
 
-.ida h6, .date h6, .cluster div h6{
+.ida h6, .date h6, .cluster div h6 {
     color: #000 !important;
 }
 
-.loader{
-
-    display: none;
-
+h5 {
+    color: white !important;
 }
 
-.info{
+.loader {
+    display: none;
+}
+
+.info {
     display: flex;
     background-color: white;
     justify-content: space-around;
     padding: 5px;
-    border: solid 5px #BBBBBB ;
-
+    border: solid 5px #BBBBBB;
 }
 
-.data-cluster{
+.data-cluster {
     display: flex;
     justify-content: space-between;
     background-color: white;
     padding: 10px;
-    border: solid 5px #BBBBBB ;
+    border: solid 5px #BBBBBB;
 }
-.flex-clusterHead{
 
+.flex-clusterHead {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
-    background-color: #BBBBBB;
+    background-color: #3688f4;
     padding: 10px;
-
 }
 
-
-
-.redbtn{
-
-    background-color:#F44336 !important;
+.VUELTA {
+    background-color: #F44336
 }
 
+.redbtn {
+    background-color: #F44336 !important;
+}
 
-
-.flexO{
+.flexO {
     display: flex;
 }
 
-.flex{
+.flex {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
 }
 
-.recomendarData{
+.recomendarData {
     display: flex;
 }
 
-.flex-2{
+.flex-2 {
     display: flex;
     flex-direction: row;
     width: 100%;
-  
 }
 
-.aerolinea{
+.aerolinea {
     padding-bottom: 5px;
 }
 
-.pb{
+.pb {
     padding-bottom: 5px;
 }
 
-.escala, .cabina{
+.escala, .cabina {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.from, .to{
+.from, .to {
     width: fit-content;
     border: solid 1px;
     align-items: center;
-    
 }
 
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
-.body{
-	font-family: 'Gothic A1', sans-serif;
-	font-size:16px;
-	}
-	p{
-	color:#6c6c6f;
-	font-size:1em;
-	}
-	h1,h2,h3,h4,h5,h6{color:#323233;text-transform:uppercase;}
-.navbar-brand  span{
-	color: #F44336;
-	font-size:25px;font-weight:700;letter-spacing:0.1em;
-    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+.body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
 }
-.navbar-brand {
-	color: #fff;
-	font-size:25px;
-    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
-	font-weight:700;
-    letter-spacing:0.1em;
-    
-}
-.appword{
 
+p {
+    color: #6c6c6f;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #323233;
+    text-transform: uppercase;
+}
+
+.navbar-brand span {
+    color: #F44336;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.appword {
     color: #3688f4 !important;
 }
-.navbar-nav .nav-item .nav-link{
-	padding: 1.1em 1em!important;
-	font-size: 120%;
+
+.navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em!important;
+    font-size: 120%;
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-   font-family: 'Gothic A1', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
 }
-.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
-.navbar-expand-md .navbar-nav .dropdown-menu{
-	border-top:3px solid #fed136;
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fed136;
 }
-.dropdown-item:hover{background-color:#fed136;color:#fff;}
-nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
-    -moz-transition: padding-top .3s,padding-bottom .3s;
-    transition: padding-top .3s,padding-bottom .3s;
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    border-top: 3px solid #fed136;
+}
+
+.dropdown-item:hover {
+    background-color: #fed136;
+    color: #fff;
+}
+
+nav {
+    -webkit-transition: padding-top .3s, padding-bottom .3s;
+    -moz-transition: padding-top .3s, padding-bottom .3s;
+    transition: padding-top .3s, padding-bottom .3s;
     border: none;
-	}
-	
- .shrink {
+}
+
+.shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #212529;
 }
-.banner{
-	background-image:url('http://www.altacatamarca.tur.ar/wp-content/uploads/2014/11/Travel-the-world-Stock-HD-Wallpaper.jpg');
-	text-align: center;
+
+.banner {
+    background-image: url('http://www.altacatamarca.tur.ar/wp-content/uploads/2014/11/Travel-the-world-Stock-HD-Wallpaper.jpg');
+    text-align: center;
     color: #fff;
-   
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -168,50 +184,56 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     -o-background-size: cover;
     background-size: cover;
 }
-.banner-text{
-	padding:200px 0 150px 0;
+
+.banner-text {
+    padding: 200px 0 150px 0;
 }
-.banner-heading{
-	font-family: 'Lobster', cursive;
-	font-size: 75px;
+
+.banner-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
     font-weight: 700;
     line-height: 100px;
     margin-bottom: 30px;
-    color:#fff;
+    color: #fff;
     background-color: #3688f499;
 }
-.banner-sub-heading{
-	font-family: 'Libre Baskerville', serif;
-	font-size: 30px;
+
+.banner-sub-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 50px;
-    color:#fff;
+    color: #fff;
     background-color: #F4433699;
 }
 
-.btn-banner{
-	padding:5px 20px;
-	border-radius:10px;
-	font-weight:700;
-	line-height:1.5;
-	text-align:center;
-	color:#fff;
-	text-transform:uppercase;
-}
-.text-intro{
-	width:90%;
-	margin:auto;
-	text-align:center;
-	padding-top:30px;
+.btn-banner {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.carousel-item{
-    height: 400px;
-} 
-.carousel-item img{
+.text-intro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.carousel-item {
     height: 400px;
 }
+
+.carousel-item img {
+    height: 400px;
+}
+
 .mapouter {
     text-align: right;
     height: 300px;
@@ -225,80 +247,74 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     width: 300px;
 }
 
-
 /* mobile view */
-@media (max-width:500px)
-{
 
-
-    .carousel-item{
-        height: 200px;
-    } 
-    .carousel-item img{
+@media (max-width:500px) {
+    .carousel-item {
         height: 200px;
     }
-	.navbar-nav{
-		background-color:#000;
-		border-top:3px solid #fed136;
-		color:#fff;
-		z-index:1;
-		margin-top:5px;
-		}
-	.navbar-nav .nav-item .nav-link{
-	padding: 0.7em 1em!important;
-	font-size: 100%;
-    font-weight: 500;
+    .carousel-item img {
+        height: 200px;
     }
-	.banner-text{
-	padding:150px 0 150px 0;
-}
-.banner-heading{
-	font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 20px;
-}
-.banner-sub-heading{
-	font-size: 10px;
-    font-weight: 200;
-    line-height: 10px;
-    margin-bottom: 40px;
+    .navbar-nav {
+        background-color: #000;
+        border-top: 3px solid #fed136;
+        color: #fff;
+        z-index: 1;
+        margin-top: 5px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        padding: 0.7em 1em!important;
+        font-size: 100%;
+        font-weight: 500;
+    }
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+    .banner-heading {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .banner-sub-heading {
+        font-size: 10px;
+        font-weight: 200;
+        line-height: 10px;
+        margin-bottom: 40px;
+    }
 }
 
+@media (max-width:768px) {
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+    .banner-sub-heading {
+        font-size: 23px;
+        font-weight: 200;
+        line-height: 23px;
+        margin-bottom: 40px;
+    }
 }
 
-@media (max-width:768px){
-	.banner-text{
-	padding:150px 0 150px 0;
-}
-	.banner-sub-heading{
-	font-size: 23px;
-    font-weight: 200;
-    line-height: 23px;
-    margin-bottom: 40px;
-}
-}
- 
-.padding{
+.padding {
     padding-right: 25%;
     padding-left: 10%;
 }
 
-.flex-3{
+.flex-3 {
     display: flex;
     flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
-    padding-left: 10px;    
-
+    padding-left: 10px;
 }
 
-.none{
+.none {
     display: none;
 }
-@media (min-width:768px){
 
-    .none{
+@media (min-width:768px) {
+    .none {
         display: inline;
     }
-
 }
