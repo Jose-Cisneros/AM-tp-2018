@@ -19,15 +19,15 @@ function renderClusters(itinerario,numero){
             `
             <div class="cluster">
 
-            <div class=".header-cluster flex-clusterHead">
+            <div class=".header-cluster flex-clusterHead ${ruta.type}">
 
-                    <div class="ida">
+                    <div>
 
-                        <h6>${ruta.type}</h6>
+                        <h5>${ruta.type}</h5>
 
                     </div>
                     <div class="date">
-                        <h6>22/10/2018</h6>
+                        <h5 class="type">22/10/2018</h5>
                     </div>
 
 
@@ -62,6 +62,7 @@ function renderClusters(itinerario,numero){
                         </div>
                 </div>
                 </div>
+                <hr>
 
             `
           }
