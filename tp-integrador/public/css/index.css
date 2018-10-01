@@ -159,6 +159,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+
+
 nav {
     -webkit-transition: padding-top .3s, padding-bottom .3s;
     -moz-transition: padding-top .3s, padding-bottom .3s;
@@ -246,6 +248,7 @@ nav {
     height: 300px;
     width: 300px;
 }
+
 
 /* mobile view */
 
