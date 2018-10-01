@@ -181,6 +181,10 @@ nav {
 
 }
 
+.historial-class h6{
+    color: #000 !important;
+}
+
 .banner {
     background-image: url('http://www.altacatamarca.tur.ar/wp-content/uploads/2014/11/Travel-the-world-Stock-HD-Wallpaper.jpg');
     text-align: center;

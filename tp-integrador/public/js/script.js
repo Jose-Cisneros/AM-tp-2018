@@ -23,6 +23,15 @@ buscar.addEventListener("click", () => {
 
     clusterAux = [];
 
+    let hist = {
+        from: from,
+        to: to,
+        datefrom: dateFrom,
+        dateTo: dateTo,
+        adults: adults
+    }
+    historial.push(hist)
+
 
     event.preventDefault();
 
@@ -53,3 +62,23 @@ buscar.addEventListener("click", () => {
 })
 
 
+let historial = []
+
+document.querySelector(".historial").addEventListener("click", () =>{
+
+    let html = ``;
+
+    historial.map(elem =>{
+        
+        html += `
+               <h6>Origen: ${elem.from}</h6>
+                <h6>Destino: ${elem.to}</h6>
+                <h6>Fecha ida: ${elem.datefrom}</h6>
+                <h6>Fecha vuelta: ${elem.dateTo}</h6>
+                <h6>Pasajeros: ${elem.adults}</h6>
+`
+
+    })
+
+    document.querySelector(".historial-class").innerHTML = html;
+})
