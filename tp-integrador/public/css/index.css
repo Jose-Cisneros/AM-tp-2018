@@ -14,11 +14,43 @@ h3, h6{
 
 .cluster{
     padding-top: 30px;
+    background-color: #eeeeeF;
+    padding: 10px;
 }
 
-.header-cluster{
+.ida h6, .date h6, .cluster div h6{
+    color: #000 !important;
+}
 
-    background-color: #eeeeeF;
+.loader{
+
+    display: none;
+
+}
+
+.info{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: 5px;
+    border: solid 5px #BBBBBB ;
+
+}
+
+.data-cluster{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border: solid 5px #BBBBBB ;
+}
+.flex-clusterHead{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #BBBBBB;
     padding: 10px;
 
 }
@@ -30,11 +62,7 @@ h3, h6{
     background-color:#F44336 !important;
 }
 
-.data-cluster{
-    padding: 10px;
-    background-color: rgb(96, 96, 190);
 
-}
 
 .flexO{
     display: flex;

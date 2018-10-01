@@ -21,6 +21,9 @@ buscar.addEventListener("click", () => {
     let dateTo = document.querySelector(".dateto").value;
     let adults = document.querySelector(".pasajeros").value;
 
+    clusterAux = [];
+
+
     event.preventDefault();
 
 
@@ -31,6 +34,10 @@ buscar.addEventListener("click", () => {
     url += "&dateTo=" + dateTo;
     url += "&adults=" + adults;
 
+    document.querySelector(".rendercluster").innerHTML = ``;
+    document.querySelector(".loader").style.display = "block";
+
+
     fetch(url)
     .then((res) =>{
         return res.json();
@@ -38,6 +45,7 @@ buscar.addEventListener("click", () => {
     
     .then(res =>{
 
+        document.querySelector(".loader").style.display = "none";
         mapperJson(res)
 
     })
