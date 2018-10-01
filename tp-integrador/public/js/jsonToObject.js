@@ -63,7 +63,7 @@ function mapperJson(json){
 
         })
 
-        renderClusters(itinerario)
+        renderClusters(itinerario,20)
         clusterAux = itinerario.clusters;
 
 }
@@ -107,7 +107,7 @@ function setCluster(rutas){
 
       if (nuevoItinerario.clusters.length > 0){ 
           
-        renderClusters(nuevoItinerario);
+        renderClusters(nuevoItinerario,20);
 
 
     }
@@ -163,7 +163,7 @@ radioEscala2.addEventListener("click", function () {
 
   if (nuevoItinerario.clusters.length > 0){ 
       
-    renderClusters(nuevoItinerario);
+    renderClusters(nuevoItinerario,20);
 
 
 }
@@ -213,7 +213,7 @@ radioEscala3.addEventListener("click", function () {
     nuevoItinerario.clusters = clusterAux;
 
       
-    renderClusters(nuevoItinerario);
+    renderClusters(nuevoItinerario,20);
 
 
 

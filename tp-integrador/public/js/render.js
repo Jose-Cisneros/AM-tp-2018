@@ -1,7 +1,7 @@
-function renderClusters(itinerario){
+function renderClusters(itinerario,numero){
 
     console.log(itinerario.clusters)
-
+    let contador = 0;
     document.querySelector(".rendercluster").innerHTML = ``;
 
 
@@ -11,6 +11,9 @@ function renderClusters(itinerario){
 
         cluster.rutas.map(ruta =>{
 
+            contador = contador + 1;
+
+          if (contador <= numero){
             html +=
              
             `
@@ -61,6 +64,7 @@ function renderClusters(itinerario){
                 </div>
 
             `
+          }
 
         })
 
@@ -97,4 +101,8 @@ function to(itinerario,ruta){
     else{
         return itinerario.origen;
     }
+}
+
+function renderall(){
+    renderClusters(itinerario,itinerario.clusters.length)
 }
