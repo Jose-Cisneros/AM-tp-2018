@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <title>Encontrá tu vuelo</title>
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand appword" href="#"><span>VIAJ</span>APP </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <div class="banner-heading">
+                    Viajemos todos !
+                </div>
+                <div class="banner-sub-heading">
+                    Encontrá las mejores ofertas para tu viaje
+                </div>
+                <a href="#sbox" id="buscar" class="btn btn-banner redbtn">Buscar!</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section id="about">
+        <div class="container">
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/barcelona.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>BARCELONA</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/londres.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LONDREs</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Miami.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>MIAMI</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-intro">
+
+                <img class="img-fluid" src="img/logo.jpg" />
+
+            </div>
+
+
+         
+            <div class="rendercluster">
+
+        </div>
+    </section>
+
+
+</body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/jsonToObject.js"></script>
+<script src="/js/render.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="/js/onecluster.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+    $('.carousel').carousel({
+        interval: 3000
+    })
+
+    $("nav").find("btn").click(function (e) {
+        e.preventDefault();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top
+        });
+    });
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+</script>
+
+
+</html>

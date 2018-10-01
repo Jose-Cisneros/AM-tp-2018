@@ -39,8 +39,9 @@ function mapperJson(json){
         let escalas = ruta.onwardflights.length;
         let horaSalida = ruta.deptime;
         let horaLlegada = ruta.arrtime;
+        let flightcode = ruta.flightcode;
 
-        rutaNueva = new setRoute(aerolinea,horaSalida,escalas,horaLlegada,duracion,"IDA")
+        rutaNueva = new setRoute(aerolinea,horaSalida,escalas,horaLlegada,duracion,"IDA",flightcode)
          
         rutasCluster.push(rutaNueva);
 
@@ -51,8 +52,10 @@ function mapperJson(json){
          let escalas1 = ruta.returnfl[0].onwardflights.length;
          let horaSalida1 = ruta.returnfl[0].deptime;
          let horaLlegada1 = ruta.returnfl[0].arrtime;
+         let flightcode1 = ruta.returnfl[0].flightcode;
+
        
-         rutaNueva2 = new setRoute(aerolinea1,horaSalida1,escalas1,horaLlegada1,duracion1,"VUELTA")
+         rutaNueva2 = new setRoute(aerolinea1,horaSalida1,escalas1,horaLlegada1,duracion1,"VUELTA",flightcode1)
          rutasCluster.push(rutaNueva2);
 
         }
@@ -65,11 +68,12 @@ function mapperJson(json){
 
         renderClusters(itinerario,20)
         clusterAux = itinerario.clusters;
+        recomendar();
 
 }
 
 
-function setRoute(aerolinea, tiempoSalida, escalas, tiempoLlegada, duracion,tipo) {
+function setRoute(aerolinea, tiempoSalida, escalas, tiempoLlegada, duracion,tipo,flightcode) {
 
 
     this.airline = aerolinea;
@@ -78,6 +82,7 @@ function setRoute(aerolinea, tiempoSalida, escalas, tiempoLlegada, duracion,tipo
     this.escala = escalas;
     this.duration = duracion;
     this.type = tipo;
+    this.flightcode = flightcode;
 
 
 }

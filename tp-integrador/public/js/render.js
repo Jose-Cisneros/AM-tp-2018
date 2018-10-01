@@ -96,7 +96,7 @@ function renderCluster(rutas) {
     <div class="data-cluster">
 
         <div class="airline">
-            <h6>${ruta.airline}</h6>
+            <h6 id="airlineId">${ruta.airline}</h6>
         </div>
         <div class="desde">
             <h6>${from(itinerario,ruta)}</h6>
@@ -131,6 +131,35 @@ function renderCluster(rutas) {
 
 })
 
+html += `
+<a href="/cluster.html?aerolinea=${rutas[0].airline}&horaIda=${rutas[0].timeDeparture}&horaLlegada=${rutas[0].timeArrive}&durationIda=${rutas[0].duration}&ciudadfromida=${from(itinerario,rutas[0])}&ciudadtoida=${to(itinerario,rutas[0])}&aerolineavuelta=${rutas[1].airline}&horavuelta=${rutas[1].timeDeparture}&horaLlegadavuelta=${rutas[1].timeArrive}&durationvuelta=${rutas[1].duration}&ciudadfromvuelta=${from(itinerario,rutas[1])}&ciudadtovuelta=${to(itinerario,rutas[1])}&escalaida=${escalas(rutas[0].ruta)}&escalavuelta=${escalas(rutas[1].ruta)}">
+<input class="recomendar" type="button" value="Recomendar" "></input>
+</a>`
+
 return html;
 
 }
+
+
+function recomendar(){
+
+    let botones = document.querySelectorAll(".recomendar")
+
+    botones.forEach(boton =>{
+
+        boton.addEventListener("click", () =>{
+
+         let clusterCompleto =   boton.parentNode;
+
+        let aerolineaIda = document.querySelectorAll(".recomendar")[0].parentNode.parentElement.querySelector(".data-cluster .airline h6").innerHTML
+
+
+
+        })
+
+    })
+
+}
+
+
+
