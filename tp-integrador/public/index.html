@@ -87,58 +87,61 @@
 
 
             <div class="row">
-                <form action="" id="sbox" class="color-form form-group">
-                    <div class="col-sm col-lg">
+                <div class="col-sm-12 ">
+                    <form action="" id="sbox" class="color-form form-group">
+                        <div class="col-sm col-lg">
 
-                        <h3>Encontrá tu vuelo</h3>
+                            <h3>Encontrá tu vuelo</h3>
 
-                        <div class="row">
-                            <div class="col-sm col-md">
-                                <h6>Origen</h6>
-                                <input type="text" class="origin form-control">
+                            <div class="row">
+                                <div class="col-sm col-md">
+                                    <h6>Origen</h6>
+                                    <input type="text" class="origin form-control" required>
+                                </div>
+                                <div class="col-md">
+                                    <h6>Destino</h6>
+                                    <input type="text" class="destino form-control" required>
+                                </div>
                             </div>
-                            <div class="col-md">
-                                <h6>Destino</h6>
-                                <input type="text" class="destino form-control">
+
+                            <div class="row">
+                                <div class="col-sm col-md">
+                                    <h6>Desde</h6>
+                                    <input type="datetime" class="datefrom form-control" required> 
+                                </div>
+                                <div class="col-md">
+                                    <h6>Hasta</h6>
+                                    <input type="datetime" class="dateto form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm col-md">
+                                    <h6>Cantidad de pasajeros</h6>
+                                    <select class="select pasajeros form-control" name="" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm col-md">
+
+                                    <input class="buscar btn-light mt-4 btn" type="button" value="Buscar vuelos">
+
+
+                                </div>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-sm col-md">
-                                <h6>Desde</h6>
-                                <input type="datetime" class="datefrom form-control">
-                            </div>
-                            <div class="col-md">
-                                <h6>Hasta</h6>
-                                <input type="datetime" class="dateto form-control">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm col-md">
-                                <h6>Cantidad de pasajeros</h6>
-                                <select class="select pasajeros form-control" name="" id="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm col-md">
-
-                                <input class="buscar btn-light mt-4 btn" type="button" value="Buscar vuelos">
-
-
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
 
 
 
             <form action="">
+
                 <input type="radio" name="escalas" id="directo"> Directo
                 <input type="radio" name="escalas" id="escala"> Con escalas
                 <input type="radio" name="escalas" id="todos"> Todos
@@ -152,11 +155,6 @@
             </div>
             <div class="rendercluster">
             </div>
-
-            <a class="todos" onclick="renderall(); return false;">Ver mas resultados</a>
-
-
-
         </div>
     </section>
 
