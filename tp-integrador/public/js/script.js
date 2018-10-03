@@ -70,13 +70,15 @@ document.querySelector(".historial").addEventListener("click", () =>{
 
     historial.map(elem =>{
         
+    
         html += `
+        <div class="historial-2">
                <h6>Origen: ${elem.from}</h6>
                 <h6>Destino: ${elem.to}</h6>
                 <h6>Fecha ida: ${elem.datefrom}</h6>
                 <h6>Fecha vuelta: ${elem.dateTo}</h6>
                 <h6>Pasajeros: ${elem.adults}</h6>
-`
+        </div>`   
 
     })
 
