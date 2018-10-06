@@ -1,4 +1,4 @@
-function renderOneCluster(){
+function renderOneCluster() {
 
     var url_string = window.location.href; window.location.href
     var url = new URL(url_string);
@@ -16,10 +16,10 @@ function renderOneCluster(){
     let ciudadtovuelta = url.searchParams.get("ciudadtovuelta")
     let escalaida = url.searchParams.get("escalaida")
     let escalavuelta = url.searchParams.get("escalavuelta")
-    
-    
-    
-    
+
+
+
+
     let html = `
     
     <div class="cluster">
@@ -117,13 +117,55 @@ function renderOneCluster(){
         </div>
         </div>
         <hr>
+
+        <form action="https://formspree.io/josecisneros654@gmail.com" method="POST">
+            <div style="display:none">
+                <input type="text" name="Ciudad IDA" value="${ciudadfromida}">
+                
+                <input type="text" name="Aerolinea IDA" value="${aerolineaIda}">
+            
+                <input type="text" name="Escalas " value="${escalaida}">
+        
+                <input type="text" name="Destino IDA" value="${ciudadtoida}">
+
+                <input type="text" name="Duracion" value="${durationIda}">
+
+                <input type="text" name="Hora de salida" value="${horaIda}">
+        
+                <input type="text" name="Hora de llegada" value="${horaLlegada}">
+
+                <input type="text" name="Ciudad  Vuelta" value="${ciudadfromvuelta}">
+                
+                <input type="text" name="Aerolinea  Vuelta" value="${aerolineavuelta}">
+            
+                <input type="text" name="Escalas  Vuelta" value="${escalavuelta}">
+        
+                <input type="text" name="Destino  Vuelta" value="${ciudadtovuelta}">
+
+                <input type="text" name="Duracion Vuelta" value="${durationvuelta}">
+
+                <input type="text" name="Hora de salida Vuelta" value="${horavuelta}">
+        
+                <input type="text" name="Hora de llegada Vuelta" value="${horaLlegadavuelta}">
+            </div>
+
+        
+                <label> Enviar por mail</label>
+                <input type="email"  name="_cc"> 
+
+                <input type="submit" value="Compartir">
+
+        </form>
     
     
         `
-        document.querySelector(".rendercluster").innerHTML += html;
-    
-        
-    
-    }
+    document.querySelector(".rendercluster").innerHTML += html;
 
-    renderOneCluster();
+
+
+
+
+
+}
+
+renderOneCluster();
