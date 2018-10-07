@@ -96,22 +96,26 @@
                             <div class="row">
                                 <div class="col-sm col-md">
                                     <h6>Origen</h6>
-                                    <input type="text" class="origin form-control mb-2" placeholder="AAA" required>
+                                    <input type="text" class="origin form-control mb-2" placeholder="AAA" pattern="[A-Z]{3}"
+                                        required>
                                 </div>
                                 <div class="col-md">
                                     <h6>Destino</h6>
-                                    <input type="text" class="destino form-control mb-2" placeholder="BBB" required>
+                                    <input type="text" class="destino form-control mb-2" placeholder="BBB" pattern="[A-Z]{3}"
+                                        required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-sm col-md">
-                                    <h6>Desde</h6>
-                                    <input type="datetime" class="datefrom form-control mb-2" placeholder="AAAA/MM/DD" required>
+                                    <h6>Fecha desde</h6>
+                                    <input type="datetime" class="datefrom form-control mb-2" placeholder="AAAA-MM-DD"
+                                        pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" required>
                                 </div>
                                 <div class="col-md">
-                                    <h6>Hasta</h6>
-                                    <input type="datetime" class="dateto form-control mb-2" required>
+                                    <h6>Fecha hasta</h6>
+                                    <input type="datetime" class="dateto form-control mb-2" placeholder="AAAA-MM-DD"
+                                        pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" required>
                                 </div>
                             </div>
 
@@ -136,6 +140,12 @@
                         </div>
                     </form>
                 </div>
+                <div class="d-flex justify-content-center">
+                    <div class="alert alert-danger ml-4 d-none validator">
+                        Complete correctamente los datos
+                    </div>
+                </div>
+
             </div>
 
 
@@ -148,7 +158,7 @@
                 <input type="radio" name="escalas" id="todos" checked> Todos
                 <input type="radio" name="escalas" id="directo"> Directo
                 <input type="radio" name="escalas" id="escala"> Con escalas
-                
+
             </form>
 
             <div class="d-flex justify-content-center">
