@@ -82,7 +82,7 @@ h5 {
     width: 100%;
 }
 
-.historial-2{
+.historial-2 {
     padding-bottom: 20px;
 }
 
@@ -163,8 +163,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-
-
 nav {
     -webkit-transition: padding-top .3s, padding-bottom .3s;
     -moz-transition: padding-top .3s, padding-bottom .3s;
@@ -178,14 +176,12 @@ nav {
     background-color: #212529;
 }
 
-.clusterIdaVUelta{
-
+.clusterIdaVUelta {
     padding: 20px;
     background-color: #ffdcdc;
-
 }
 
-.historial-class h6{
+.historial-class h6 {
     color: #000 !important;
 }
 
@@ -264,8 +260,9 @@ nav {
     width: 300px;
 }
 
-
-
+.filtros {
+    display: none;
+}
 
 /* mobile view */
 
@@ -315,25 +312,19 @@ nav {
         margin-bottom: 40px;
     }
     .duracion {
-
         display: none;
-    
     }
-    .airline h6{
+    .airline h6 {
         text-transform: lowercase;
-
     }
-    .desde h6{
+    .desde h6 {
         text-transform: lowercase;
-
     }
-    .directo h6{
+    .directo h6 {
         text-transform: lowercase;
-
     }
-    .destino h6{
+    .destino h6 {
         text-transform: lowercase;
-
     }
 }
 
@@ -353,7 +344,6 @@ nav {
 .none {
     display: none;
 }
-
 
 @media (min-width:768px) {
     .none {

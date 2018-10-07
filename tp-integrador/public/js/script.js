@@ -12,7 +12,6 @@ $(document).on("scroll", function () {
 let buscar = document.querySelector(".buscar");
 
 
-
 buscar.addEventListener("click", () => {
 
     let from = document.querySelector(".origin").value;
@@ -44,6 +43,8 @@ buscar.addEventListener("click", () => {
     url += "&adults=" + adults;
 
     document.querySelector(".rendercluster").innerHTML = ``;
+    
+    document.querySelector(".filtros").style.display = "none";
     document.querySelector(".loader").style.display = "block";
 
 
@@ -54,6 +55,7 @@ buscar.addEventListener("click", () => {
     
     .then(res =>{
 
+        document.querySelector(".filtros").style.display = "block";
         document.querySelector(".loader").style.display = "none";
         mapperJson(res)
 

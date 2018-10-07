@@ -17,7 +17,7 @@ app.use("/buscar",(req,res) => {
     let urlJson = "http://developer.goibibo.com/api/search/?app_id=c244b17c&app_key=fdfc557e12c667b58aeb88a366633b2a%09&format=json&source=%s&destination=%s&dateofdeparture=%s&dateofarrival=%s&seatingclass=E&adults=%s&children=0&infants=0&counter=100";
     let urlFinal = util.format(urlJson,req.query.from,req.query.to,req.query.dateFrom,req.query.dateTo,req.query.adults);
     let urlHardcore = "https://api.myjson.com/bins/hfwnk"
-
+    console.log(urlHardcore)
     var headers = {
         'User-Agent':       'Super Agent/0.0.1',
         'Content-Type':     'application/x-www-form-urlencoded',
@@ -26,7 +26,7 @@ app.use("/buscar",(req,res) => {
     }
 
     var options = {
-        url : urlHardcore,
+        url : urlFinal,
         method : 'GET',
         jar : true,
         headers : headers

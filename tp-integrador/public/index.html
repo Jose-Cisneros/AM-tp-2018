@@ -96,29 +96,29 @@
                             <div class="row">
                                 <div class="col-sm col-md">
                                     <h6>Origen</h6>
-                                    <input type="text" class="origin form-control" required>
+                                    <input type="text" class="origin form-control mb-2" placeholder="AAA" required>
                                 </div>
                                 <div class="col-md">
                                     <h6>Destino</h6>
-                                    <input type="text" class="destino form-control" required>
+                                    <input type="text" class="destino form-control mb-2" placeholder="BBB" required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-sm col-md">
                                     <h6>Desde</h6>
-                                    <input type="datetime" class="datefrom form-control" required>
+                                    <input type="datetime" class="datefrom form-control mb-2" placeholder="AAAA/MM/DD" required>
                                 </div>
                                 <div class="col-md">
                                     <h6>Hasta</h6>
-                                    <input type="datetime" class="dateto form-control" required>
+                                    <input type="datetime" class="dateto form-control mb-2" required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-sm col-md">
                                     <h6>Cantidad de pasajeros</h6>
-                                    <select class="select pasajeros form-control" name="" id="">
+                                    <select class="select pasajeros form-control mb-2" name="" id="">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -141,21 +141,22 @@
 
             <a class="historial">Historial</a>
             <div class="historial-class">
-                
+
             </div>
 
-            <form action="">
-
+            <form class="filtros" action="">
+                <input type="radio" name="escalas" id="todos" checked> Todos
                 <input type="radio" name="escalas" id="directo"> Directo
                 <input type="radio" name="escalas" id="escala"> Con escalas
-                <input type="radio" name="escalas" id="todos"> Todos
+                
             </form>
 
-
-            <div class="loader">
-                <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" width="480" height="480" frameBorder="0" class="giphy-embed"
-                    allowFullScreen></iframe>
-                <p><a href="https://giphy.com/gifs/loop-loading-loader-xTk9ZvMnbIiIew7IpW"></a></p>
+            <div class="d-flex justify-content-center">
+                <div class="loader">
+                    <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" width="480" height="480" frameBorder="0"
+                        class="giphy-embed" allowFullScreen></iframe>
+                    <p><a href="https://giphy.com/gifs/loop-loading-loader-xTk9ZvMnbIiIew7IpW"></a></p>
+                </div>
             </div>
             <div class="rendercluster">
             </div>
