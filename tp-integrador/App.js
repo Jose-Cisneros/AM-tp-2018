@@ -26,7 +26,7 @@ app.use("/buscar",(req,res) => {
     }
 
     var options = {
-        url : urlFinal,
+        url : urlHardcore,
         method : 'GET',
         jar : true,
         headers : headers

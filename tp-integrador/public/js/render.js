@@ -101,23 +101,54 @@ function renderCluster(rutas) {
     </div>
     <div class="data-cluster">
 
-        <div class="airline">
-            <h6 id="airlineId">${ruta.airline}</h6>
-        </div>
-        <div class="desde">
-            <h6>${from(itinerario,ruta)}</h6>
-        </div>
-        <div class="directo">
-            <h6>${escalas(ruta.escala)}</h6>
-        </div>
-        <div class="destino">
-        <h6>   ${to(itinerario,ruta)}</h6>
-        </div>
+        <div class="row">
 
-        <div class="duracion">
-            <h6>${ruta.duration}</h6>
-        </div>
+            <div class="col">
+                <h6>Aerolínea</h6>
+            </div>
 
+            <div class="col">
+                <i class="fas fa-plane-departure"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="airline">
+                    <h6 id="airlineId" class="italic">${ruta.airline}</h6>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="desde">
+                    <h6 class="borderc no-padding-right">${from(itinerario,ruta)}</h6>
+                </div>
+            </div>
+            <div class="col-2">
+
+                <i class="fas fa-arrow-right"></i>
+            
+            </div>
+               
+            <div class="col-3">    
+                <div class="destino">
+                <h6 class="borderc no-padding-right">   ${to(itinerario,ruta)}</h6>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+        
+       
+            <div class="col">
+                <div class="directo text-center">
+                    <h6>${escalas(ruta.escala)}</h6>
+                </div>
+            </div> 
+            <div class="col">
+             <i class="fas fa-exclamation-circle"></i>
+            </div>
+
+
+        </div>
     </div>
     <div class="info">
         <div class="salida">
@@ -127,7 +158,7 @@ function renderCluster(rutas) {
             <h6>Hora llegada: ${ruta.timeArrive}</h6>
         </div>
         <div class="duracion">
-                <h6>Duracion: ${ruta.duration}</h6>
+                <h6><i class="far fa-clock"></i>: ${ruta.duration}</h6>
             </div>
     </div>
     </div>
