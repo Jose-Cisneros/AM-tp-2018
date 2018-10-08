@@ -94,7 +94,7 @@ function renderCluster(rutas) {
 
         </div>
         <div class="date">
-            <h5 class="type">22/10/2018</h5>
+            <h5 class="type">${ruta.fecha.substring(0,10)}</h5>
         </div>
 
 
@@ -110,7 +110,9 @@ function renderCluster(rutas) {
         <div class="directo">
             <h6>${escalas(ruta.escala)}</h6>
         </div>
-        <div class="destino">${to(itinerario,ruta)}</div>
+        <div class="destino">
+        <h6>   ${to(itinerario,ruta)}</h6>
+        </div>
 
         <div class="duracion">
             <h6>${ruta.duration}</h6>

@@ -83,7 +83,10 @@ h5 {
 }
 
 .historial-2 {
-    padding-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px ;
 }
 
 .aerolinea {
@@ -326,7 +329,15 @@ nav {
     .destino h6 {
         text-transform: lowercase;
     }
-}
+    .directo{
+        display: none;
+    }
+    .salida h6 {
+        text-transform: lowercase;
+    }
+    .Legada h6 {
+        text-transform: lowercase;
+    }
 
 .padding {
     padding-right: 25%;

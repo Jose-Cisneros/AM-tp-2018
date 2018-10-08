@@ -40,8 +40,9 @@ function mapperJson(json){
         let horaSalida = ruta.deptime;
         let horaLlegada = ruta.arrtime;
         let flightcode = ruta.flightcode;
+        let fecha = ruta.depdate;
 
-        rutaNueva = new setRoute(aerolinea,horaSalida,escalas,horaLlegada,duracion,"IDA",flightcode)
+        rutaNueva = new setRoute(aerolinea,horaSalida,escalas,horaLlegada,duracion,"IDA",flightcode,fecha)
          
         rutasCluster.push(rutaNueva);
 
@@ -53,9 +54,11 @@ function mapperJson(json){
          let horaSalida1 = ruta.returnfl[0].deptime;
          let horaLlegada1 = ruta.returnfl[0].arrtime;
          let flightcode1 = ruta.returnfl[0].flightcode;
+         let fecha1 = ruta.returnfl[0].depdate;
+
 
        
-         rutaNueva2 = new setRoute(aerolinea1,horaSalida1,escalas1,horaLlegada1,duracion1,"VUELTA",flightcode1)
+         rutaNueva2 = new setRoute(aerolinea1,horaSalida1,escalas1,horaLlegada1,duracion1,"VUELTA",flightcode1,fecha1)
          rutasCluster.push(rutaNueva2);
 
         }
@@ -73,7 +76,7 @@ function mapperJson(json){
 }
 
 
-function setRoute(aerolinea, tiempoSalida, escalas, tiempoLlegada, duracion,tipo,flightcode) {
+function setRoute(aerolinea, tiempoSalida, escalas, tiempoLlegada, duracion,tipo,flightcode,fecha) {
 
 
     this.airline = aerolinea;
@@ -83,6 +86,7 @@ function setRoute(aerolinea, tiempoSalida, escalas, tiempoLlegada, duracion,tipo
     this.duration = duracion;
     this.type = tipo;
     this.flightcode = flightcode;
+    this.fecha = fecha
 
 
 }
